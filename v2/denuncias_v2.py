@@ -86,7 +86,7 @@ def registrar(denuncias):
     while not nombre.replace(" ", "").isalpha():
         nombre = input("Nombre inválido, use solo letras: ").strip()
     dni = input("DNI (8 dígitos): ").strip()
-    while len(dni) != 8 or not dni.isdigit():
+    while len(dni) != 8 or not dni.isdigit(): # <- Si la longitud no es 8 o si el contiene caracteres no digitos 
         dni = input("DNI inválido, escriba 8 dígitos: ").strip()
     ubicacion = input("Ubicación: ").replace("|", " ").strip()
     descripcion = input("Descripción: ").replace("|", " ").strip()
